@@ -1,4 +1,4 @@
-command: "khd -e \"print mode\""
+command: "/usr/local/bin/khd -v"
 
 refreshFrequency: 1000
 
@@ -8,7 +8,7 @@ render: (output) ->
 style: """
   -webkit-font-smoothing: antialiased
   font: 11px Hack
-  left: 25%
+  right: 450px
   top: 5px
   color: #d5c4a1
 """

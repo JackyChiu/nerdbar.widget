@@ -8,7 +8,7 @@ IFS='|' read -r theArtist theName theState <<<"$(osascript <<<'tell application 
         set theState to player state as string
         return theArtist & "|" & theName & "|" & theState
     end tell')" &&
-echo "<span class='title'>$theArtist -</span><class='artist'>$theName</>" || echo ""
+echo "<span class='title'>$theArtist -</span><class='artist'>$theName</>" || echo "Not Connected To Spotify"
 """
 
 refreshFrequency: 60000
@@ -16,21 +16,18 @@ refreshFrequency: 60000
 style: """
   -webkit-font-smoothing: antialiased
   text-align: center
-  top: 5px
   left: 25%
+  top: 5px
   color: #d5c4a1
   width: 50%
-
   .text
     height: 16px
     color: #9C9486
     font-family: Hack
     font-size: 11px
-
   .title
     color: #d5c4a1
     margin-right: 5px
-
   .artist
     color: #d5c4a1
     opacity: 0.8;
@@ -41,6 +38,6 @@ style: """
 
 render: (output) -> """
   <div class="output">
-  	<div class="text">#{output}</div>
+  	<div class="text"><span class='icon'>  </span> #{output}</div>
   </div>
 """
