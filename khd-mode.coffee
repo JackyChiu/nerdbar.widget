@@ -1,6 +1,6 @@
 command: "/usr/local/bin/khd -e \"print mode\""
 
-refreshFrequency: 1000
+refreshFrequency: 250
 
 render: (output) ->
   "#{output}"
