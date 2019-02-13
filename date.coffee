@@ -7,8 +7,8 @@ render: (output) ->
 
 style: """
   -webkit-font-smoothing: antialiased
-  color: #b48dac
+  color: #b9a0ef
   font: 11px Hack
-  right: 75px
+  right: 72px
   top: 6px
 """

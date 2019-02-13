@@ -11,6 +11,6 @@ style: """
   left: 25%
   font: 11px Hack
   top: 5px
-  color: #d5c4a1
+  color: #e9cb88
   width: 50%
 """
