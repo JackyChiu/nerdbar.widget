@@ -3,14 +3,14 @@ command: "/usr/local/bin/khd -e \"print mode\""
 refreshFrequency: 250
 
 render: (output) ->
-  "#{output}"
+  "[#{output.trim()}]"
 
 style: """
   -webkit-font-smoothing: antialiased
   text-align: center
-  left: 25%
+  left: 8px
   font: 11px Hack
   top: 5px
-  color: #e9cb88
-  width: 50%
+  color: #87bff5
+  width: 15px
 """

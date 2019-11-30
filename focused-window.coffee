@@ -1,4 +1,4 @@
-command: "echo $(/usr/local/bin/yabai -m query --windows --window 2> /dev/null | /usr/local/bin/jq '.title')"
+command: "echo $(/usr/local/bin/yabai -m query --windows --window 2> /dev/null | /usr/local/bin/jq -r '.title')"
 
 refreshFrequency: 1000 # ms
 
@@ -10,9 +10,9 @@ style: """
   color: #87bff5
   font: 11px Hack
   height: 16px
-  left: 10px
+  left: 75px
   overflow: hidden
   text-overflow: ellipsis
   top: 6px
-  width: 500px
+  width: 400px
 """
