@@ -1,4 +1,4 @@
-command: "echo $(/usr/local/bin/yabai -m query --windows --window | /usr/local/bin/jq .title)"
+command: "echo $(/usr/local/bin/yabai -m query --windows --window 2> /dev/null | /usr/local/bin/jq '.title')"
 
 refreshFrequency: 1000 # ms
 
