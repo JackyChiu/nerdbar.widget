@@ -13,6 +13,6 @@ style: """
   left: 75px
   overflow: hidden
   text-overflow: ellipsis
-  top: 6px
+  top: 5px
   width: 400px
 """
